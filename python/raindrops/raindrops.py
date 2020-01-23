@@ -1,6 +1,7 @@
 def convert(num: int) -> str:
     # Output response used for joining in the comprehension.
     resp = ''
+
     # Divisors to be used in the calculation (key) with the
     # corresponding result string (value).
     divs = {
