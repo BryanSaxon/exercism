@@ -1,17 +1,19 @@
-def convert(number: int) -> str:
-    response = ''
+def convert(num: int) -> str:
+    # Output response used for joining in the comprehension.
+    resp = ''
+    # Divisors to be used in the calculation (key) with the
+    # corresponding result string (value).
+    divs = {
+        3: 'Pling',
+        5: 'Plang',
+        7: 'Plong'
+    }
 
-    if number % 3 == 0:
-        response = response + 'Pling'
+    # Comprehension for determining result.
+    res = [resp + divs[i] for i in divs if num % i == 0]
 
-    if number % 5 == 0:
-        response = response + 'Plang'
- 
-    if number % 7 == 0:
-        response = response + 'Plong'
-
-    if response != '':
-        return response
-    else:
-        return str(number)
+    # Return result unless unable to divide by any divisor and
+    # else return the initial integer in string format.
+    if len(res) > 0: return ''.join(res)
+    return str(num)
 
