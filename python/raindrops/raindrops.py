@@ -1,4 +1,4 @@
-def convert(number):
+def convert(number: int) -> str:
     response = ''
 
     if number % 3 == 0:
