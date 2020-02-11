@@ -1,5 +1,5 @@
 # Exercism
 
-My solutions for [Exercisim].
+My solutions for [Exercism].
 
 [Exercism]: https://exercism.io
